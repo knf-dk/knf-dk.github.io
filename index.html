@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="da" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KNF | Skræddersyede Softwareløsninger & Systemarkitektur</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        darkbg: '#0f172a',
+                        darker: '#020617',
+                        accent: '#0ea5e9',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #020617; color: #f8fafc; }
+        .tech-tag {
+            background-color: #1e293b;
+            color: #38bdf8;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.875rem;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-accent selection:text-white">
+
+    <nav class="fixed w-full z-50 bg-darker/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold tracking-tighter text-white">KNF<span class="text-accent">.</span></a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-300">
+                <a href="#kompetencer" class="hover:text-accent transition-colors">Kompetencer</a>
+                <a href="#erfaring" class="hover:text-accent transition-colors">Erfaring</a>
+                <a href="#kontakt" class="hover:text-accent transition-colors">Kontakt</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-32 pb-20 px-6 max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
+        <div class="flex-1 space-y-6">
+            <h2 class="text-accent font-mono tracking-wide text-sm font-semibold uppercase">Konsulentydelser & Systemudvikling</h2>
+            <h1 class="text-5xl md:text-6xl font-bold leading-tight tracking-tight">
+                Enterprise Systemarkitektur & <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-blue-400">Softwareløsninger</span>
+            </h1>
+            <p class="text-lg text-slate-400 max-w-2xl leading-relaxed">
+                Mere end 20 års erfaring med design, udvikling og integration af forretningskritiske enterprise-systemer. KNF leverer højt specialiseret konsulentbistand inden for softwareudvikling og arkitektur til virksomheder med strenge krav til driftssikkerhed og skalering. Ved aktivt at integrere moderne AI-værktøjer i vores arbejdsprocesser, sikrer vi maksimal effektivitet og kodeleverancer af absolut topkvalitet.
+            </p>
+            <div class="pt-4">
+                <a href="#kontakt" class="bg-accent hover:bg-sky-400 text-darker font-semibold px-8 py-4 rounded-lg transition-all duration-200">
+                    Kontakt for tilgængelighed
+                </a>
+            </div>
+        </div>        
+        <div class="flex-1 w-full mt-10 md:mt-0 relative h-72 md:h-96">
+            <!-- Billede 1: Arkitektur (Ligger øverst til højre / bagved) -->
+            <img src="watermarked_img_1327713060997419192.jpg" alt="Digitalisering og Arkitektur" class="absolute top-0 right-0 md:right-4 w-3/4 md:w-2/3 h-48 md:h-64 object-cover rounded-xl shadow-2xl border border-slate-700 z-10 hover:z-30 transition-all duration-300">
+            
+            <!-- Billede 2: AI (Ligger nederst til venstre / forrest) -->
+            <!-- Du kan skifte src ud med din egen lokale fil senere, f.eks. src="ai-billede.jpg" -->
+            <img src="234lkjnhfasduh234.png" alt="Artificial Intelligence" class="absolute bottom-0 left-0 w-3/4 md:w-2/3 h-48 md:h-64 object-cover rounded-xl shadow-[0_0_40px_-10px_rgba(14,165,233,0.3)] border border-slate-700 z-20 hover:z-30 transition-all duration-300">
+        </div>
+    </header>
+
+    <section id="kompetencer" class="py-20 bg-darkbg border-y border-slate-800">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12">Kernefaglighed</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-darker p-8 rounded-xl border border-slate-800 hover:border-slate-700 transition-colors">
+                    <h3 class="text-xl font-semibold mb-4">Backend & Arkitektur</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Dyb ekspertise i at designe og bygge komplekse systemarkitekturer. Specialiseret i at levere og fremtidssikre ekstremt driftskritiske enterprise-systemer i .NET og C#, hvor stabilitet og performance er altafgørende.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="tech-tag">C# / .NET</span>
+                        <span class="tech-tag">AI-Assisted Dev</span>
+                        <span class="tech-tag">Angular</span>
+                        <span class="tech-tag">React</span>
+                    </div>
+                </div>
+                <div class="bg-darker p-8 rounded-xl border border-slate-800 hover:border-slate-700 transition-colors">
+                    <h3 class="text-xl font-semibold mb-4">Komplekse Integrationer</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Design af REST API'er og integration af forretningskritiske systemer via asynkrone message queues på tværs af platforme.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="tech-tag">REST API</span>
+                        <span class="tech-tag">RabbitMQ</span>
+                        <span class="tech-tag">Pulsar</span>
+                        <span class="tech-tag">SQL Server</span>
+                    </div>
+                </div>
+                <div class="bg-darker p-8 rounded-xl border border-slate-800 hover:border-slate-700 transition-colors">
+                    <h3 class="text-xl font-semibold mb-4">Legacy Modernisering</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Erfaring med at bygge bro mellem nye digitale platforme og klassiske enterprise-systemer uden at gå på kompromis med driftssikkerheden.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="tech-tag">Legacy systemer</span>
+                        <span class="tech-tag">z/OS</span>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="erfaring" class="py-20">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12">Udvalgte Projekter</h2>
+            
+            <div class="space-y-12">
+                <div class="grid md:grid-cols-4 gap-4 md:gap-8">
+                    <div class="text-slate-500 font-mono text-sm pt-1">2018 — Nu</div>
+                    <div class="md:col-span-3">
+                        <h3 class="text-xl font-bold text-white mb-2">Senior Konsulent / Systemarkitektur <span class="text-accent">@ Danske Commodities</span></h3>
+                        <p class="text-slate-400 leading-relaxed mb-4">
+                            Systemdesign og udvikling af digitale platforme til handel i elmarkedet og optimering af vedvarende energi. Arbejdet fokuserer på handel og balancering af elnettet samt at udvikle arkitektur, der håndterer den uforudsigelighed, som vind- og solenergi skaber i energisystemet.
+                        </p>
+                        <p class="text-slate-400 leading-relaxed mb-4">
+                            Værdien i løsningerne har bestået i at bygge systemer, der leverer og orkestrerer fleksibilitet. Dette inkluderer bl.a. integrationer til Energinet og markedet for systemydelser, samt systemer til produktions- og lagersiden (bl.a. BESS, Elkedler), der optimerer køb og salg af energi.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-4 gap-4 md:gap-8 border-t border-slate-800 pt-12">
+                    <div class="text-slate-500 font-mono text-sm pt-1">2014 — 2018</div>
+                    <div class="md:col-span-3">
+                        <h3 class="text-xl font-bold text-white mb-2">Senior Software Engineering <span class="text-accent">@ Danske Bank</span></h3>
+                        <p class="text-slate-400 leading-relaxed mb-4">
+                            Full-Stack-udvikling på investerings-universet i Ny Mobilbank (Mobile 3.0). Bygget fra bunden på en microservice-arkitektur med håndtering af performance-beregninger, værdipapir-overblik og handel for mere end en million kunder.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-4 gap-4 md:gap-8 border-t border-slate-800 pt-12">
+                    <div class="text-slate-500 font-mono text-sm pt-1">2001 — 2014</div>
+                    <div class="md:col-span-3">
+                        <h3 class="text-xl font-bold text-white mb-2">Konsulent & Arkitektur <span class="text-accent">@ A.P. Møller - Mærsk & IBM</span></h3>
+                        <p class="text-slate-400 leading-relaxed mb-4">
+                            Løsningsarkitektur på Mærsks globale indkøbssystem (RFMP) og Global Marine Payroll, der håndterede løn for +10.000 søfarende på tværs af lande og valutaer. Tidligere udvikling hos IBM på bl.a. Ø90-platformen og MLØN (lønsystem).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="kontakt" class="bg-darkbg border-t border-slate-800 py-16">
+        <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+            <div>
+                <h2 class="text-2xl font-bold mb-4">Klar til nye opgaver?</h2>
+                <p class="text-slate-400 mb-8 max-w-sm">
+                    KNF går analytisk til værks for at forstå det dybe forretningsdomæne og omsætte det til skalerbar, stabil software.
+                </p>
+                <a href="mailto:me@knf.dk" class="inline-flex items-center gap-2 text-accent hover:text-sky-300 font-mono font-semibold text-lg transition-colors">
+                    ✉ me@knf.dk
+                </a>
+            </div>
+            <div class="text-slate-400 text-sm flex flex-col justify-end md:items-end space-y-2">
+                <p class="font-semibold text-white">KNF v/ Kristian Niels Frederiksen</p>
+                <p>CVR: 39926113</p>
+                <p>Siim Bygade 128, 8680 Ry</p>
+                <p class="pt-4">
+                    <a href="https://www.linkedin.com/in/knf-dk" target="_blank" rel="noopener noreferrer" class="hover:text-white underline decoration-slate-600 underline-offset-4">
+                        Find os på LinkedIn
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
