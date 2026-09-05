@@ -50,9 +50,8 @@
     </nav>
 
     <header class="pt-28 md:pt-32 pb-16 md:pb-20 px-4 md:px-6 max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-12">
-        <div class="flex-1 space-y-5 md:space-y-6 w-full">
+        <div class="flex-1 space-y-5 md:space-y-6 w-full z-20">
             <h2 class="text-accent font-mono tracking-wide text-xs md:text-sm font-semibold uppercase">Konsulentydelser & Systemudvikling</h2>
-            <!-- Tekststørrelsen er justeret her til mobile (text-4xl) og tillader orddeling for ikke at ødelægge skærmbredden -->
             <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight break-words">
                 Enterprise Systemarkitektur & <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-blue-400">Softwareløsninger</span>
             </h1>
@@ -66,11 +65,17 @@
             </div>
         </div>        
         
-        <!-- Billedernes højder og bredder er justeret for smalle skærme -->
-        <div class="flex-1 w-full mt-6 md:mt-0 relative h-64 sm:h-72 md:h-96">
-            <img src="watermarked_img_1327713060997419192.jpg" alt="Digitalisering og Arkitektur" class="absolute top-0 right-0 w-[70%] md:w-2/3 h-40 sm:h-48 md:h-64 object-cover rounded-xl shadow-2xl border border-slate-700 z-10 hover:z-30 transition-all duration-300">
-            
-            <img src="234lkjnhfasduh234.png" alt="Artificial Intelligence" class="absolute bottom-0 left-0 w-[70%] md:w-2/3 h-40 sm:h-48 md:h-64 object-cover rounded-xl shadow-[0_0_40px_-10px_rgba(14,165,233,0.3)] border border-slate-700 z-20 hover:z-30 transition-all duration-300">
+        <!-- Nyt låst layout for billeder: Kolonne på mobil, Absolut på PC -->
+        <div class="flex-1 w-full mt-8 md:mt-0">
+            <div class="flex flex-col md:block md:relative md:h-96 w-full">
+                
+                <!-- Billede 1: Arkitektur -->
+                <img src="watermarked_img_1327713060997419192.jpg" alt="Digitalisering og Arkitektur" class="w-[85%] sm:w-[75%] md:absolute md:top-0 md:right-0 md:w-2/3 h-48 sm:h-56 md:h-64 object-cover rounded-xl shadow-2xl border border-slate-700 z-10 md:hover:z-30 transition-all duration-300 self-end ml-auto md:ml-0">
+                
+                <!-- Billede 2: AI -->
+                <img src="234lkjnhfasduh234.png" alt="Artificial Intelligence" class="w-[85%] sm:w-[75%] md:absolute md:bottom-0 md:left-0 md:w-2/3 h-48 sm:h-56 md:h-64 object-cover rounded-xl shadow-[0_0_40px_-10px_rgba(14,165,233,0.3)] border border-slate-700 z-20 md:hover:z-30 transition-all duration-300 -mt-16 sm:-mt-20 md:mt-0 self-start mr-auto md:mr-0">
+                
+            </div>
         </div>
     </header>
 
